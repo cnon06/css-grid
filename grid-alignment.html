@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display: grid;
+            gap: 10px;
+            background-color: blue;
+            padding: 10px;
+            /* grid-template-columns: repeat(3, 1fr); */
+            grid-template-columns: repeat(3, 20%); 
+            grid-template-rows: repeat(2, 20%); 
+            height: 100vh;
+            /* justify-items: start; */
+            /* align-items: center; */
+
+
+            justify-content: end;
+            align-content: end;
+        }   
+
+        .item
+        {
+            background-color: red;
+        }
+
+        .item:first-child
+        {
+            align-self: start;
+            justify-self: end;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="item">Box-1</div>
+        <div class="item">Box-2</div>
+        <div class="item">Box-3</div>
+        <div class="item">Box-4</div>
+        <div class="item">Box-5</div>
+        <div class="item">Box-6</div>
+    </div>
+    
+</body>
+</html>
